@@ -8,6 +8,8 @@ const openSans = Open_Sans({ subsets: ["latin"] });
 const notoSansJP = Noto_Sans_JP({ subsets: ["latin"] });
 const notoSerifJP = Noto_Serif_JP({ subsets: [ "latin"], weight: "400" });
 
+export const runtime = 'edge';
+
 export const metadata: Metadata = {
   title: {
     default: `${yourName}.me`,

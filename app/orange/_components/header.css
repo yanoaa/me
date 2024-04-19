@@ -1,0 +1,13 @@
+.line:after {
+    @apply bg-orange-surface;
+    border-radius: 5px;
+    content: "";
+    display: block;
+    height: 10px; /* 線幅 */
+    margin-top: 16px
+}
+
+h2 {
+    @apply text-xl;
+    margin-bottom: 12px
+}

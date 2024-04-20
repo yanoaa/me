@@ -2,15 +2,20 @@ import Header from "@/app/orange/_components/header";
 import Footer from "@/app/orange/_components/footer";
 import {githubLink, instagramLink, twitterLink, yourName} from "@/app/property";
 import "@/app/orange/_components/header.css";
+import Image from "next/image";
+import Fruit from "@/assets/orange/fruit.svg"
+import Twitter from "@/assets/orange/twitter_outlined.png"
+import Instagram from "@/assets/orange/instagram_outlined.png"
+import GitHub from "@/assets/orange/github_outlined.png"
 
 export default function Page() {
     return (
         <main className={'bg-orange-background w-screen min-h-screen '}>
             <div className={'absolute w-screen z-0'}>
                 <div className={'relative'}>
-                    <img src={"/orange/fruit.svg"} alt={"fruit"} width={240} height={240} className={'rotate-12 absolute top-12 left-16'}/>
-                    <img src={"/orange/fruit.svg"} alt={"fruit"}  width={420} height={420} className={'-rotate-45 absolute top-16 right-0'}/>
-                    <img src={"/orange/fruit.svg"} alt={"fruit"}  width={320} height={320} className={'-rotate-12 absolute top-[30rem] right-[24rem]'}/>
+                    <Image src={Fruit} alt={"fruit"} width={240} height={240} className={'rotate-12 absolute top-12 left-16'}/>
+                    <Image src={Fruit} alt={"fruit"}  width={420} height={420} className={'-rotate-45 absolute top-16 right-0'}/>
+                    <Image src={Fruit} alt={"fruit"}  width={320} height={320} className={'-rotate-12 absolute top-[30rem] right-[24rem]'}/>
                 </div>
             </div>
             <div className={'max-w-screen-lg flex flex-col items-center mx-auto px-12 py-10 z-10'}>
@@ -34,19 +39,19 @@ export default function Page() {
                         'absolute right-12 top-12'}>
                         <ul className={'flex flex-col gap-4'}>
                             <li>
-                                <img src={'/orange/twitter_outlined.png'} alt={'twitter'}
+                                <Image src={Twitter} alt={'twitter'}
                                        width={30} height={30} className={'inline mr-3'}/>
                                 <a href={twitterLink} target={'_blank'} rel={'noopener noreferrer'}
                                    className={'inline'}>Twitter</a>
                             </li>
                             <li>
-                                <img src={'/orange/instagram_outlined.png'} alt={'twitter'}
+                                <Image src={Instagram} alt={'instagram'}
                                        width={30} height={30} className={'inline mr-3'}/>
                                 <a href={instagramLink} target={'_blank'} rel={'noopener noreferrer'}
                                    className={'inline'}>Instagram</a>
                             </li>
                             <li>
-                                <img src={'/orange/github_outlined.png'} alt={'twitter'}
+                                <Image src={GitHub} alt={'github'}
                                        width={30} height={30} className={'inline mr-3'}/>
                                 <a href={githubLink} target={'_blank'} rel={'noopener noreferrer'}
                                    className={'inline'}>GitHub</a>

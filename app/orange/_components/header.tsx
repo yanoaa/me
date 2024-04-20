@@ -1,12 +1,14 @@
 import Link from "next/link";
+import Image from "next/image";
+import Triangle from "@/assets/orange/triangle.svg"
 
 export default function Header() {
     return (
         <header className={'flex flex-row items-center gap-6'}>
             <Link href={'/about'}>About</Link>
-            <img src={"/orange/triangle.svg"} alt={"fruit"}  width={19} height={21}/>
+            <Image src={Triangle} alt={"fruit"}  width={19} height={21}/>
             <Link href={'/works'}>Works</Link>
-            <img src={"/orange/triangle.svg"} alt={"fruit"}  width={19} height={21}/>
+            <Image src={Triangle} alt={"fruit"}  width={19} height={21}/>
             <Link href={'/blog'}>Blog</Link>
         </header>
     )

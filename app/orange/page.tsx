@@ -8,7 +8,7 @@ import "@/app/orange/_components/header.css";
 export default function Page() {
     return (
         <main className={'bg-orange-background w-screen min-h-screen '}>
-            <div className={'absolute w-screen z-0 '}>
+            <div className={'absolute w-screen z-0'}>
                 <div className={'relative'}>
                     <Fruit width={240} height={240} className={'rotate-12 absolute top-12 left-16'}/>
                     <Fruit width={420} height={420} className={'-rotate-45 absolute top-16 right-0'}/>

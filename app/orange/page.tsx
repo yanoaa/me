@@ -1,5 +1,4 @@
 import Header from "@/app/orange/_components/header";
-import Fruit from "@/public/orange/fruit.svg";
 import Image from "next/image";
 import Footer from "@/app/orange/_components/footer";
 import {githubLink, instagramLink, twitterLink, yourName} from "@/app/property";
@@ -10,9 +9,9 @@ export default function Page() {
         <main className={'bg-orange-background w-screen min-h-screen '}>
             <div className={'absolute w-screen z-0'}>
                 <div className={'relative'}>
-                    <Fruit width={240} height={240} className={'rotate-12 absolute top-12 left-16'}/>
-                    <Fruit width={420} height={420} className={'-rotate-45 absolute top-16 right-0'}/>
-                    <Fruit width={320} height={320} className={'-rotate-12 absolute top-[30rem] right-[24rem]'}/>
+                    <Image src={"/orange/fruit.svg"} alt={"fruit"} width={240} height={240} className={'rotate-12 absolute top-12 left-16'}/>
+                    <Image src={"/orange/fruit.svg"} alt={"fruit"}  width={420} height={420} className={'-rotate-45 absolute top-16 right-0'}/>
+                    <Image src={"/orange/fruit.svg"} alt={"fruit"}  width={320} height={320} className={'-rotate-12 absolute top-[30rem] right-[24rem]'}/>
                 </div>
             </div>
             <div className={'max-w-screen-lg flex flex-col items-center mx-auto px-12 py-10 z-10'}>

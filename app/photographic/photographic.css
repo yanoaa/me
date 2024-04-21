@@ -1,0 +1,9 @@
+body {
+    @apply bg-photo-background;
+    font-family: var(--font-sedan), var(--font-notoserifjp), serif;
+}
+
+h2 {
+    font-size: 2rem;
+    line-height: 2.5;
+}

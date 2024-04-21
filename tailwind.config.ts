@@ -22,6 +22,10 @@ const config: Config = {
           background: '#F5F5F5',
           surface: '#FFF',
           foreground: '#252525'
+        },
+        photo: {
+          background: '#F8F8F8',
+          surface: '#FFF'
         }
       },
     },

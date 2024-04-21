@@ -17,6 +17,11 @@ const config: Config = {
             b: 'rgba(241, 248, 170, 0.50)',
             c: 'rgba(221, 249, 170, 0.50)'
           }
+        },
+        paper: {
+          background: '#F5F5F5',
+          surface: '#FFF',
+          foreground: '#252525'
         }
       },
     },

@@ -25,7 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja">
-      <body className={openSans.className}>{children}</body>
+      <body className={notoSerifJP.className}>{children}</body>
     </html>
   );
 }

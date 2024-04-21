@@ -1,0 +1,38 @@
+.paper {
+    @apply bg-paper-surface px-12 py-16 min-h-screen;
+    box-shadow: 0 4px 16px 0 rgba(112, 112, 112, 0.25);
+    counter-reset: h3;
+}
+
+h1 {
+    font-size: 1.875rem;
+    line-height: 2;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.25rem;
+    line-height: 2;
+    text-align: center;
+}
+
+h3::before {
+    counter-increment: h3;  /* h2カウンターの値に1を加算 */
+    content: counter(h3) ". ";   /* h2カウンターの値を表示 */
+    font-family: 'Noto Serif JP', serif !important;
+    font-weight: 400 !important;
+    position: relative;
+    right: 10px
+}
+
+h3 {
+    font-size: 1.25rem;
+    line-height: 4;
+    text-align: left;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 500;
+}
+
+p {
+    text-indent: 1em;
+}
